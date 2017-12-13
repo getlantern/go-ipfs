@@ -25,11 +25,17 @@ func (api *CoreAPI) Unixfs() coreiface.UnixfsAPI {
 }
 
 func (api *CoreAPI) Name() coreiface.NameAPI {
-	return (*NameAPI)(api)
+	return &NameAPI{
+		api,
+		nil,
+	}
 }
 
 func (api *CoreAPI) Key() coreiface.KeyAPI {
-	return (*KeyAPI)(api)
+	return &KeyAPI{
+		api,
+		nil,
+	}
 }
 
 func (api *CoreAPI) ResolveNode(ctx context.Context, p coreiface.Path) (coreiface.Node, error) {
