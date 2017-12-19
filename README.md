@@ -1,3 +1,5 @@
+## It's a fork of https://github.com/ipfs/go-ipfs which replaces the IPFS import paths with normal ones via [`gx-go uw`](https://github.com/ipfs/go-ipfs/issues/4491#issuecomment-351835336)
+
 # go-ipfs
 
 ![banner](https://ipfs.io/ipfs/QmVk7srrwahXLNmcDYvyUEJptyoxpndnRa57YJ11L4jV26/ipfs.go.png)
