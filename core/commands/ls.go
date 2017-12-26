@@ -6,19 +6,19 @@ import (
 	"io"
 	"text/tabwriter"
 
-	blockservice "github.com/ipfs/go-ipfs/blockservice"
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	e "github.com/ipfs/go-ipfs/core/commands/e"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
-	unixfs "github.com/ipfs/go-ipfs/unixfs"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
-	unixfspb "github.com/ipfs/go-ipfs/unixfs/pb"
+	blockservice "github.com/getlantern/go-ipfs/blockservice"
+	cmds "github.com/getlantern/go-ipfs/commands"
+	core "github.com/getlantern/go-ipfs/core"
+	e "github.com/getlantern/go-ipfs/core/commands/e"
+	offline "github.com/getlantern/go-ipfs/exchange/offline"
+	merkledag "github.com/getlantern/go-ipfs/merkledag"
+	path "github.com/getlantern/go-ipfs/path"
+	unixfs "github.com/getlantern/go-ipfs/unixfs"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
+	unixfspb "github.com/getlantern/go-ipfs/unixfs/pb"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
-	"gx/ipfs/QmQp2a2Hhb7F6eK2A5hN8f9aJy4mtkEikL9Zj4cgB7d1dD/go-ipfs-cmdkit"
+	"github.com/ipfs/go-ipfs-cmdkit"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 type LsLink struct {

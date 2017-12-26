@@ -13,18 +13,18 @@ import (
 	"sync"
 	"testing"
 
-	core "github.com/ipfs/go-ipfs/core"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
-	coremock "github.com/ipfs/go-ipfs/core/mock"
-	importer "github.com/ipfs/go-ipfs/importer"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
-	ci "gx/ipfs/QmeDA8gNhvRTsbrjEieay5wezupJDiky8xvCzDABbsGzmp/go-testutil/ci"
+	core "github.com/getlantern/go-ipfs/core"
+	coreunix "github.com/getlantern/go-ipfs/core/coreunix"
+	coremock "github.com/getlantern/go-ipfs/core/mock"
+	importer "github.com/getlantern/go-ipfs/importer"
+	chunk "github.com/getlantern/go-ipfs/importer/chunk"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
+	ci "github.com/libp2p/go-testutil/ci"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	fstest "gx/ipfs/QmaFNtBAXX4nVMQWbUqNysXyhevUj1k4B1y5uS45LC7Vw9/fuse/fs/fstestutil"
+	fstest "bazil.org/fuse/fs/fstestutil"
+	u "github.com/ipfs/go-ipfs-util"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 func maybeSkipFuseTests(t *testing.T) {

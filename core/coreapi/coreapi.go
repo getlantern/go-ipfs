@@ -3,12 +3,12 @@ package coreapi
 import (
 	"context"
 
-	core "github.com/ipfs/go-ipfs/core"
-	coreiface "github.com/ipfs/go-ipfs/core/coreapi/interface"
-	ipfspath "github.com/ipfs/go-ipfs/path"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	core "github.com/getlantern/go-ipfs/core"
+	coreiface "github.com/getlantern/go-ipfs/core/coreapi/interface"
+	ipfspath "github.com/getlantern/go-ipfs/path"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
 )
 
 type CoreAPI struct {

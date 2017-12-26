@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	ds "github.com/ipfs/go-datastore"
 
-	bs "github.com/ipfs/go-ipfs/blocks/blockstore"
-	"github.com/ipfs/go-ipfs/pin"
+	bs "github.com/getlantern/go-ipfs/blocks/blockstore"
+	"github.com/getlantern/go-ipfs/pin"
 )
 
 // RemovedBlock is used to respresent the result of removing a block.

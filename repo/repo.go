@@ -4,12 +4,12 @@ import (
 	"errors"
 	"io"
 
-	filestore "github.com/ipfs/go-ipfs/filestore"
-	keystore "github.com/ipfs/go-ipfs/keystore"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	filestore "github.com/getlantern/go-ipfs/filestore"
+	keystore "github.com/getlantern/go-ipfs/keystore"
+	config "github.com/getlantern/go-ipfs/repo/config"
 
-	ma "gx/ipfs/QmW8s4zTsUoX1Q6CeYxVKPyqSKbF7H1YDUyTostBtZ8DaG/go-multiaddr"
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
+	ds "github.com/ipfs/go-datastore"
+	ma "github.com/multiformats/go-multiaddr"
 )
 
 var (

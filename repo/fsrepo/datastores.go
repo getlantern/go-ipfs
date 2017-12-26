@@ -8,17 +8,17 @@ import (
 	"path/filepath"
 	"sort"
 
-	repo "github.com/ipfs/go-ipfs/repo"
+	repo "github.com/getlantern/go-ipfs/repo"
 
-	measure "gx/ipfs/QmU7tt6mHJ5Wocjy2omBxpDfN8g9pkRimzJae7EXdrs96k/go-ds-measure"
-	flatfs "gx/ipfs/Qmak5iFUErGmKhYUC5StZtCGFp5bdhvye8PdKgTMk9B9Fw/go-ds-flatfs"
+	flatfs "github.com/ipfs/go-ds-flatfs"
+	measure "github.com/ipfs/go-ds-measure"
 
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	mount "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/syncmount"
+	ds "github.com/ipfs/go-datastore"
+	mount "github.com/ipfs/go-datastore/syncmount"
 
-	levelds "gx/ipfs/QmYnCBXxoyoS38vtNQjjpRwZTiUnpuuKpapxMNaDfyQRLf/go-ds-leveldb"
-	ldbopts "gx/ipfs/QmbBhyDKsY4mbY6xsKt3qu9Y7FPvMJ6qbD8AMjYYvPRw1g/goleveldb/leveldb/opt"
-	badgerds "gx/ipfs/Qmdin8YL17fL1BC5ej6o9b8es6MBoiQjKVdyxEwJh3HVmf/go-ds-badger"
+	badgerds "github.com/ipfs/go-ds-badger"
+	levelds "github.com/ipfs/go-ds-leveldb"
+	ldbopts "github.com/syndtr/goleveldb/leveldb/opt"
 )
 
 // ConfigFromMap creates a new datastore config from a map

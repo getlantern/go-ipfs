@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"io"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	ftpb "github.com/ipfs/go-ipfs/unixfs/pb"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	ft "github.com/getlantern/go-ipfs/unixfs"
+	ftpb "github.com/getlantern/go-ipfs/unixfs/pb"
 
-	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
+	proto "github.com/gogo/protobuf/proto"
 )
 
 // DagReader provides a way to easily read the data contained in a dag.

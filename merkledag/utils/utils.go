@@ -4,15 +4,15 @@ import (
 	"context"
 	"errors"
 
-	bstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	bserv "github.com/ipfs/go-ipfs/blockservice"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
+	bstore "github.com/getlantern/go-ipfs/blocks/blockstore"
+	bserv "github.com/getlantern/go-ipfs/blockservice"
+	offline "github.com/getlantern/go-ipfs/exchange/offline"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	path "github.com/getlantern/go-ipfs/path"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	syncds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/sync"
+	ds "github.com/ipfs/go-datastore"
+	syncds "github.com/ipfs/go-datastore/sync"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 type Editor struct {

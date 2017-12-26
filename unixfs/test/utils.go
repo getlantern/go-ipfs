@@ -8,17 +8,17 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/ipfs/go-ipfs/importer/chunk"
-	h "github.com/ipfs/go-ipfs/importer/helpers"
-	trickle "github.com/ipfs/go-ipfs/importer/trickle"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	mdagmock "github.com/ipfs/go-ipfs/merkledag/test"
-	ft "github.com/ipfs/go-ipfs/unixfs"
+	"github.com/getlantern/go-ipfs/importer/chunk"
+	h "github.com/getlantern/go-ipfs/importer/helpers"
+	trickle "github.com/getlantern/go-ipfs/importer/trickle"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	mdagmock "github.com/getlantern/go-ipfs/merkledag/test"
+	ft "github.com/getlantern/go-ipfs/unixfs"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	mh "gx/ipfs/QmYeKnKpubCMRiq3PGZcTREErthbb5Q9cXsCoSkD9bjEBd/go-multihash"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	u "github.com/ipfs/go-ipfs-util"
+	node "github.com/ipfs/go-ipld-format"
+	mh "github.com/multiformats/go-multihash"
 )
 
 func SizeSplitterGen(size int64) chunk.SplitterGen {

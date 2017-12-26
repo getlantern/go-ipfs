@@ -8,16 +8,16 @@ import (
 	"strings"
 	"testing"
 
-	core "github.com/ipfs/go-ipfs/core"
-	coreapi "github.com/ipfs/go-ipfs/core/coreapi"
-	coreiface "github.com/ipfs/go-ipfs/core/coreapi/interface"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	repo "github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
-	unixfs "github.com/ipfs/go-ipfs/unixfs"
-	cbor "gx/ipfs/QmeZv9VXw2SfVbX55LV6kGTWASKBc9ZxAVqGBeJcDGdoXy/go-ipld-cbor"
+	core "github.com/getlantern/go-ipfs/core"
+	coreapi "github.com/getlantern/go-ipfs/core/coreapi"
+	coreiface "github.com/getlantern/go-ipfs/core/coreapi/interface"
+	coreunix "github.com/getlantern/go-ipfs/core/coreunix"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	repo "github.com/getlantern/go-ipfs/repo"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	ds2 "github.com/getlantern/go-ipfs/thirdparty/datastore2"
+	unixfs "github.com/getlantern/go-ipfs/unixfs"
+	cbor "github.com/ipfs/go-ipld-cbor"
 )
 
 // `echo -n 'hello, world!' | ipfs add`

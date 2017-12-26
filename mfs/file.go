@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sync"
 
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	mod "github.com/ipfs/go-ipfs/unixfs/mod"
+	chunk "github.com/getlantern/go-ipfs/importer/chunk"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	ft "github.com/getlantern/go-ipfs/unixfs"
+	mod "github.com/getlantern/go-ipfs/unixfs/mod"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 type File struct {

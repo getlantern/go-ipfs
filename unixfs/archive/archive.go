@@ -7,11 +7,11 @@ import (
 	"io"
 	"path"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	tar "github.com/ipfs/go-ipfs/unixfs/archive/tar"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	tar "github.com/getlantern/go-ipfs/unixfs/archive/tar"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 // DefaultBufSize is the buffer size for gets. for now, 1MB, which is ~4 blocks.

@@ -8,13 +8,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ipfs/go-ipfs/blocks/blockstore"
-	exchange "github.com/ipfs/go-ipfs/exchange"
-	bitswap "github.com/ipfs/go-ipfs/exchange/bitswap"
+	"github.com/getlantern/go-ipfs/blocks/blockstore"
+	exchange "github.com/getlantern/go-ipfs/exchange"
+	bitswap "github.com/getlantern/go-ipfs/exchange/bitswap"
 
-	logging "gx/ipfs/QmSpJByNKFX1sCsHBEp3R73FL4NF6FnQTEGyNAXHm2GS52/go-log"
-	blocks "gx/ipfs/QmYsEQydGrsxNZfAiskvQ76N2xE9hDQtSAkRSynwMiUK3c/go-block-format"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	blocks "github.com/ipfs/go-block-format"
+	cid "github.com/ipfs/go-cid"
+	logging "github.com/ipfs/go-log"
 )
 
 var log = logging.Logger("blockservice")

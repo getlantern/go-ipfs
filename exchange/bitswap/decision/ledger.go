@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	wl "github.com/ipfs/go-ipfs/exchange/bitswap/wantlist"
+	wl "github.com/getlantern/go-ipfs/exchange/bitswap/wantlist"
 
-	peer "gx/ipfs/QmWNY7dV54ZDYmTA1ykVdwNCqC11mpU4zSUp6XDpLTH9eG/go-libp2p-peer"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	peer "github.com/libp2p/go-libp2p-peer"
 )
 
 func newLedger(p peer.ID) *ledger {

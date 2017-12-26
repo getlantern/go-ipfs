@@ -7,12 +7,12 @@ import (
 	"strings"
 	"testing"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	"github.com/ipfs/go-ipfs/unixfs"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	"github.com/getlantern/go-ipfs/unixfs"
 
 	context "context"
 
-	testu "github.com/ipfs/go-ipfs/unixfs/test"
+	testu "github.com/getlantern/go-ipfs/unixfs/test"
 )
 
 func TestBasicRead(t *testing.T) {

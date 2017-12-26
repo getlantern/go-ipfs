@@ -5,9 +5,9 @@ import (
 
 	context "context"
 
-	"github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
+	"github.com/getlantern/go-ipfs/repo"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	ds2 "github.com/getlantern/go-ipfs/thirdparty/datastore2"
 )
 
 func TestInitialization(t *testing.T) {

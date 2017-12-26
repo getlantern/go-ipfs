@@ -7,12 +7,12 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ipfs/go-ipfs/blocks/blockstore"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	posinfo "github.com/ipfs/go-ipfs/thirdparty/posinfo"
+	"github.com/getlantern/go-ipfs/blocks/blockstore"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	posinfo "github.com/getlantern/go-ipfs/thirdparty/posinfo"
 
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	ds "github.com/ipfs/go-datastore"
 )
 
 func newTestFilestore(t *testing.T) (string, *Filestore) {

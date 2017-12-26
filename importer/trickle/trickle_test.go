@@ -9,14 +9,14 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	h "github.com/ipfs/go-ipfs/importer/helpers"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	mdtest "github.com/ipfs/go-ipfs/merkledag/test"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	chunk "github.com/getlantern/go-ipfs/importer/chunk"
+	h "github.com/getlantern/go-ipfs/importer/helpers"
+	merkledag "github.com/getlantern/go-ipfs/merkledag"
+	mdtest "github.com/getlantern/go-ipfs/merkledag/test"
+	ft "github.com/getlantern/go-ipfs/unixfs"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
+	u "github.com/ipfs/go-ipfs-util"
 )
 
 type UseRawLeaves bool

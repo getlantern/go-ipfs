@@ -7,18 +7,18 @@ import (
 	"io"
 	"time"
 
-	cmds "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	e "github.com/ipfs/go-ipfs/core/commands/e"
-	corerepo "github.com/ipfs/go-ipfs/core/corerepo"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	path "github.com/ipfs/go-ipfs/path"
-	pin "github.com/ipfs/go-ipfs/pin"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	cmds "github.com/getlantern/go-ipfs/commands"
+	core "github.com/getlantern/go-ipfs/core"
+	e "github.com/getlantern/go-ipfs/core/commands/e"
+	corerepo "github.com/getlantern/go-ipfs/core/corerepo"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	path "github.com/getlantern/go-ipfs/path"
+	pin "github.com/getlantern/go-ipfs/pin"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	"gx/ipfs/QmQp2a2Hhb7F6eK2A5hN8f9aJy4mtkEikL9Zj4cgB7d1dD/go-ipfs-cmdkit"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	"github.com/ipfs/go-ipfs-cmdkit"
+	u "github.com/ipfs/go-ipfs-util"
 )
 
 var PinCmd = &cmds.Command{

@@ -6,13 +6,13 @@ import (
 
 	context "context"
 
-	path "github.com/ipfs/go-ipfs/path"
-	offroute "github.com/ipfs/go-ipfs/routing/offline"
-	"github.com/ipfs/go-ipfs/unixfs"
+	path "github.com/getlantern/go-ipfs/path"
+	offroute "github.com/getlantern/go-ipfs/routing/offline"
+	"github.com/getlantern/go-ipfs/unixfs"
 
-	ci "gx/ipfs/QmaPbCnUMBohSGo3KnxEa2bHqyJVVeEEcwtqJAYxerieBo/go-libp2p-crypto"
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	dssync "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/sync"
+	ds "github.com/ipfs/go-datastore"
+	dssync "github.com/ipfs/go-datastore/sync"
+	ci "github.com/libp2p/go-libp2p-crypto"
 )
 
 type mockResolver struct {

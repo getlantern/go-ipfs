@@ -5,7 +5,7 @@ import (
 
 	context "context"
 
-	path "github.com/ipfs/go-ipfs/path"
+	path "github.com/getlantern/go-ipfs/path"
 )
 
 type resolver interface {

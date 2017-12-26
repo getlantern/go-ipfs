@@ -3,9 +3,9 @@ package balanced
 import (
 	"errors"
 
-	h "github.com/ipfs/go-ipfs/importer/helpers"
+	h "github.com/getlantern/go-ipfs/importer/helpers"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 func BalancedLayout(db *h.DagBuilderHelper) (node.Node, error) {

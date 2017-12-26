@@ -10,19 +10,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/go-ipfs/blocks/blockstore"
-	"github.com/ipfs/go-ipfs/blockservice"
-	"github.com/ipfs/go-ipfs/core"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	"github.com/ipfs/go-ipfs/pin/gc"
-	"github.com/ipfs/go-ipfs/repo"
-	"github.com/ipfs/go-ipfs/repo/config"
-	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
-	pi "github.com/ipfs/go-ipfs/thirdparty/posinfo"
-	"gx/ipfs/QmYsEQydGrsxNZfAiskvQ76N2xE9hDQtSAkRSynwMiUK3c/go-block-format"
+	"github.com/ipfs/go-block-format"
+	"github.com/getlantern/go-ipfs/blocks/blockstore"
+	"github.com/getlantern/go-ipfs/blockservice"
+	"github.com/getlantern/go-ipfs/core"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	"github.com/getlantern/go-ipfs/pin/gc"
+	"github.com/getlantern/go-ipfs/repo"
+	"github.com/getlantern/go-ipfs/repo/config"
+	ds2 "github.com/getlantern/go-ipfs/thirdparty/datastore2"
+	pi "github.com/getlantern/go-ipfs/thirdparty/posinfo"
 
-	"gx/ipfs/QmQp2a2Hhb7F6eK2A5hN8f9aJy4mtkEikL9Zj4cgB7d1dD/go-ipfs-cmdkit/files"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	"github.com/ipfs/go-ipfs-cmdkit/files"
 )
 
 func TestAddRecursive(t *testing.T) {

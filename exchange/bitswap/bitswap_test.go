@@ -8,20 +8,20 @@ import (
 	"testing"
 	"time"
 
-	blockstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	blocksutil "github.com/ipfs/go-ipfs/blocks/blocksutil"
-	decision "github.com/ipfs/go-ipfs/exchange/bitswap/decision"
-	tn "github.com/ipfs/go-ipfs/exchange/bitswap/testnet"
-	mockrouting "github.com/ipfs/go-ipfs/routing/mock"
-	delay "github.com/ipfs/go-ipfs/thirdparty/delay"
+	blockstore "github.com/getlantern/go-ipfs/blocks/blockstore"
+	blocksutil "github.com/getlantern/go-ipfs/blocks/blocksutil"
+	decision "github.com/getlantern/go-ipfs/exchange/bitswap/decision"
+	tn "github.com/getlantern/go-ipfs/exchange/bitswap/testnet"
+	mockrouting "github.com/getlantern/go-ipfs/routing/mock"
+	delay "github.com/getlantern/go-ipfs/thirdparty/delay"
 
-	detectrace "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-detect-race"
+	detectrace "github.com/getlantern/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-detect-race"
 
-	blocks "gx/ipfs/QmYsEQydGrsxNZfAiskvQ76N2xE9hDQtSAkRSynwMiUK3c/go-block-format"
-	p2ptestutil "gx/ipfs/QmZTcPxK6VqrwY94JpKZPvEqAZ6tEr1rLrpcqJbbRZbg2V/go-libp2p-netutil"
-	tu "gx/ipfs/QmeDA8gNhvRTsbrjEieay5wezupJDiky8xvCzDABbsGzmp/go-testutil"
-	travis "gx/ipfs/QmeDA8gNhvRTsbrjEieay5wezupJDiky8xvCzDABbsGzmp/go-testutil/ci/travis"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	blocks "github.com/ipfs/go-block-format"
+	cid "github.com/ipfs/go-cid"
+	p2ptestutil "github.com/libp2p/go-libp2p-netutil"
+	tu "github.com/libp2p/go-testutil"
+	travis "github.com/libp2p/go-testutil/ci/travis"
 )
 
 // FIXME the tests are really sensitive to the network delay. fix them to work

@@ -1,9 +1,9 @@
 package plugin
 
 import (
-	"github.com/ipfs/go-ipfs/core/coredag"
+	"github.com/getlantern/go-ipfs/core/coredag"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 // PluginIPLD is an interface that can be implemented to add handlers for

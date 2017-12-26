@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	mdtest "github.com/ipfs/go-ipfs/merkledag/test"
-	path "github.com/ipfs/go-ipfs/path"
+	dag "github.com/getlantern/go-ipfs/merkledag"
+	mdtest "github.com/getlantern/go-ipfs/merkledag/test"
+	path "github.com/getlantern/go-ipfs/path"
 
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
 )
 
 func TestAddLink(t *testing.T) {

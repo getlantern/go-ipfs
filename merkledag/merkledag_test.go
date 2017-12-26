@@ -13,20 +13,20 @@ import (
 	"testing"
 	"time"
 
-	bserv "github.com/ipfs/go-ipfs/blockservice"
-	bstest "github.com/ipfs/go-ipfs/blockservice/test"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	imp "github.com/ipfs/go-ipfs/importer"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	. "github.com/ipfs/go-ipfs/merkledag"
-	mdpb "github.com/ipfs/go-ipfs/merkledag/pb"
-	dstest "github.com/ipfs/go-ipfs/merkledag/test"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
-	blocks "gx/ipfs/QmYsEQydGrsxNZfAiskvQ76N2xE9hDQtSAkRSynwMiUK3c/go-block-format"
+	blocks "github.com/ipfs/go-block-format"
+	bserv "github.com/getlantern/go-ipfs/blockservice"
+	bstest "github.com/getlantern/go-ipfs/blockservice/test"
+	offline "github.com/getlantern/go-ipfs/exchange/offline"
+	imp "github.com/getlantern/go-ipfs/importer"
+	chunk "github.com/getlantern/go-ipfs/importer/chunk"
+	. "github.com/getlantern/go-ipfs/merkledag"
+	mdpb "github.com/getlantern/go-ipfs/merkledag/pb"
+	dstest "github.com/getlantern/go-ipfs/merkledag/test"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	u "github.com/ipfs/go-ipfs-util"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 func TestNode(t *testing.T) {

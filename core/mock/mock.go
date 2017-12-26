@@ -4,20 +4,20 @@ import (
 	"context"
 	"net"
 
-	commands "github.com/ipfs/go-ipfs/commands"
-	core "github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/repo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
-	testutil "gx/ipfs/QmeDA8gNhvRTsbrjEieay5wezupJDiky8xvCzDABbsGzmp/go-testutil"
+	commands "github.com/getlantern/go-ipfs/commands"
+	core "github.com/getlantern/go-ipfs/core"
+	"github.com/getlantern/go-ipfs/repo"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	ds2 "github.com/getlantern/go-ipfs/thirdparty/datastore2"
+	testutil "github.com/libp2p/go-testutil"
 
-	host "gx/ipfs/QmP46LGWhzVZTMmt5akNNLfoV8qL4h5wTwmzQxLyDafggd/go-libp2p-host"
-	peer "gx/ipfs/QmWNY7dV54ZDYmTA1ykVdwNCqC11mpU4zSUp6XDpLTH9eG/go-libp2p-peer"
-	ipnet "gx/ipfs/QmXcN1kXchSvodd2MGypWXXirXk7GigQ7WVyWGYpukag6J/go-libp2p-interface-pnet"
-	smux "gx/ipfs/QmY9JXR3FupnYAYJWK9aMr9bCpqWKcToQ1tz8DVGTrHpHw/go-stream-muxer"
-	pstore "gx/ipfs/QmYijbtjCxFEjSXaudaQAUz3LN5VKLssm8WCUsRoqzXmQR/go-libp2p-peerstore"
-	mocknet "gx/ipfs/Qma23bpHwQrQyvKeBemaeJh7sAoRHggPkgnge1B9489ff5/go-libp2p/p2p/net/mock"
-	metrics "gx/ipfs/QmaL2WYJGbWKqHoLujoi9GQ5jj4JVFrBqHUBWmEYzJPVWT/go-libp2p-metrics"
+	host "github.com/libp2p/go-libp2p-host"
+	ipnet "github.com/libp2p/go-libp2p-interface-pnet"
+	metrics "github.com/libp2p/go-libp2p-metrics"
+	peer "github.com/libp2p/go-libp2p-peer"
+	pstore "github.com/libp2p/go-libp2p-peerstore"
+	mocknet "github.com/libp2p/go-libp2p/p2p/net/mock"
+	smux "github.com/libp2p/go-stream-muxer"
 )
 
 // NewMockNode constructs an IpfsNode for use in tests.

@@ -3,9 +3,9 @@ package coreunix
 import (
 	"context"
 
-	core "github.com/ipfs/go-ipfs/core"
-	path "github.com/ipfs/go-ipfs/path"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	core "github.com/getlantern/go-ipfs/core"
+	path "github.com/getlantern/go-ipfs/path"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 )
 
 func Cat(ctx context.Context, n *core.IpfsNode, pstr string) (uio.DagReader, error) {

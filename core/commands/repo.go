@@ -9,17 +9,17 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	bstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	oldcmds "github.com/ipfs/go-ipfs/commands"
-	e "github.com/ipfs/go-ipfs/core/commands/e"
-	corerepo "github.com/ipfs/go-ipfs/core/corerepo"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
-	lockfile "github.com/ipfs/go-ipfs/repo/fsrepo/lock"
+	bstore "github.com/getlantern/go-ipfs/blocks/blockstore"
+	oldcmds "github.com/getlantern/go-ipfs/commands"
+	e "github.com/getlantern/go-ipfs/core/commands/e"
+	corerepo "github.com/getlantern/go-ipfs/core/corerepo"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	fsrepo "github.com/getlantern/go-ipfs/repo/fsrepo"
+	lockfile "github.com/getlantern/go-ipfs/repo/fsrepo/lock"
 
-	cmds "gx/ipfs/QmP9vZfc5WSjfGTXmwX2EcicMFzmZ6fXn7HTdKYat6ccmH/go-ipfs-cmds"
-	cmdkit "gx/ipfs/QmQp2a2Hhb7F6eK2A5hN8f9aJy4mtkEikL9Zj4cgB7d1dD/go-ipfs-cmdkit"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	cmdkit "github.com/ipfs/go-ipfs-cmdkit"
+	cmds "github.com/ipfs/go-ipfs-cmds"
 )
 
 type RepoVersion struct {

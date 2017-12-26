@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	oldcmds "github.com/ipfs/go-ipfs/commands"
-	commands "github.com/ipfs/go-ipfs/core/commands"
+	oldcmds "github.com/getlantern/go-ipfs/commands"
+	commands "github.com/getlantern/go-ipfs/core/commands"
 
-	cmds "gx/ipfs/QmP9vZfc5WSjfGTXmwX2EcicMFzmZ6fXn7HTdKYat6ccmH/go-ipfs-cmds"
+	cmds "github.com/ipfs/go-ipfs-cmds"
 )
 
 // This is the CLI root, used for executing commands accessible to CLI clients.

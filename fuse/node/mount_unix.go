@@ -9,11 +9,11 @@ import (
 	"strings"
 	"sync"
 
-	core "github.com/ipfs/go-ipfs/core"
-	ipns "github.com/ipfs/go-ipfs/fuse/ipns"
-	mount "github.com/ipfs/go-ipfs/fuse/mount"
-	rofs "github.com/ipfs/go-ipfs/fuse/readonly"
-	logging "gx/ipfs/QmSpJByNKFX1sCsHBEp3R73FL4NF6FnQTEGyNAXHm2GS52/go-log"
+	core "github.com/getlantern/go-ipfs/core"
+	ipns "github.com/getlantern/go-ipfs/fuse/ipns"
+	mount "github.com/getlantern/go-ipfs/fuse/mount"
+	rofs "github.com/getlantern/go-ipfs/fuse/readonly"
+	logging "github.com/ipfs/go-log"
 )
 
 var log = logging.Logger("node")

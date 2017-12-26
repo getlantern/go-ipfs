@@ -9,17 +9,17 @@ import (
 	"path/filepath"
 	"syscall"
 
-	core "github.com/ipfs/go-ipfs/core"
-	corehttp "github.com/ipfs/go-ipfs/core/corehttp"
-	coreunix "github.com/ipfs/go-ipfs/core/coreunix"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
+	core "github.com/getlantern/go-ipfs/core"
+	corehttp "github.com/getlantern/go-ipfs/core/corehttp"
+	coreunix "github.com/getlantern/go-ipfs/core/coreunix"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	fsrepo "github.com/getlantern/go-ipfs/repo/fsrepo"
 
-	homedir "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/mitchellh/go-homedir"
+	homedir "github.com/getlantern/go-ipfs/Godeps/_workspace/src/github.com/mitchellh/go-homedir"
 
-	commands "gx/ipfs/QmP9vZfc5WSjfGTXmwX2EcicMFzmZ6fXn7HTdKYat6ccmH/go-ipfs-cmds"
-	process "gx/ipfs/QmSF8fPo3jgVBAy8fpdjjYqgG87dkJgUprRBHRd2tmfgpP/goprocess"
-	fsnotify "gx/ipfs/QmczzCMvJ3HV57WBKDy8b4ucp7quT325JjDbixYRS5Pwvv/fsnotify.v1"
+	commands "github.com/ipfs/go-ipfs-cmds"
+	process "github.com/jbenet/goprocess"
+	fsnotify "gopkg.in/fsnotify.v1"
 )
 
 var http = flag.Bool("http", false, "expose IPFS HTTP API")

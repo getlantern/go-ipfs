@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ipfs/go-ipfs/core"
+	"github.com/getlantern/go-ipfs/core"
 
-	isd "gx/ipfs/QmZmmuAXgX73UQmX1jRKjTGmjzq24Jinqkq8vzkBtno4uX/go-is-domain"
+	isd "github.com/jbenet/go-is-domain"
 )
 
 // IPNSHostnameOption rewrites an incoming request if its Host: header contains

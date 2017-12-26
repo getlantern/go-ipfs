@@ -1,7 +1,7 @@
 package node
 
 import (
-	"github.com/ipfs/go-ipfs/core"
+	"github.com/getlantern/go-ipfs/core"
 )
 
 func Mount(node *core.IpfsNode, fsdir, nsdir string) error {

@@ -3,11 +3,11 @@ package reprovide
 import (
 	"context"
 
-	blocks "github.com/ipfs/go-ipfs/blocks/blockstore"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	pin "github.com/ipfs/go-ipfs/pin"
+	blocks "github.com/getlantern/go-ipfs/blocks/blockstore"
+	merkledag "github.com/getlantern/go-ipfs/merkledag"
+	pin "github.com/getlantern/go-ipfs/pin"
 
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
 )
 
 // NewBlockstoreProvider returns key provider using bstore.AllKeysChan

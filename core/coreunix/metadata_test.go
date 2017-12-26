@@ -6,20 +6,20 @@ import (
 	"io/ioutil"
 	"testing"
 
-	bstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	bserv "github.com/ipfs/go-ipfs/blockservice"
-	core "github.com/ipfs/go-ipfs/core"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	importer "github.com/ipfs/go-ipfs/importer"
-	chunk "github.com/ipfs/go-ipfs/importer/chunk"
-	merkledag "github.com/ipfs/go-ipfs/merkledag"
-	ft "github.com/ipfs/go-ipfs/unixfs"
-	uio "github.com/ipfs/go-ipfs/unixfs/io"
+	bstore "github.com/getlantern/go-ipfs/blocks/blockstore"
+	bserv "github.com/getlantern/go-ipfs/blockservice"
+	core "github.com/getlantern/go-ipfs/core"
+	offline "github.com/getlantern/go-ipfs/exchange/offline"
+	importer "github.com/getlantern/go-ipfs/importer"
+	chunk "github.com/getlantern/go-ipfs/importer/chunk"
+	merkledag "github.com/getlantern/go-ipfs/merkledag"
+	ft "github.com/getlantern/go-ipfs/unixfs"
+	uio "github.com/getlantern/go-ipfs/unixfs/io"
 
-	u "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	dssync "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/sync"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	ds "github.com/ipfs/go-datastore"
+	dssync "github.com/ipfs/go-datastore/sync"
+	u "github.com/ipfs/go-ipfs-util"
 )
 
 func getDagserv(t *testing.T) merkledag.DAGService {

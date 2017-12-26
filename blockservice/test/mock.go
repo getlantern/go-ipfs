@@ -1,11 +1,11 @@
 package bstest
 
 import (
-	. "github.com/ipfs/go-ipfs/blockservice"
-	bitswap "github.com/ipfs/go-ipfs/exchange/bitswap"
-	tn "github.com/ipfs/go-ipfs/exchange/bitswap/testnet"
-	mockrouting "github.com/ipfs/go-ipfs/routing/mock"
-	delay "github.com/ipfs/go-ipfs/thirdparty/delay"
+	. "github.com/getlantern/go-ipfs/blockservice"
+	bitswap "github.com/getlantern/go-ipfs/exchange/bitswap"
+	tn "github.com/getlantern/go-ipfs/exchange/bitswap/testnet"
+	mockrouting "github.com/getlantern/go-ipfs/routing/mock"
+	delay "github.com/getlantern/go-ipfs/thirdparty/delay"
 )
 
 // Mocks returns |n| connected mock Blockservices

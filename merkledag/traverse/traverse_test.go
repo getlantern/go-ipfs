@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	mdag "github.com/ipfs/go-ipfs/merkledag"
-	mdagtest "github.com/ipfs/go-ipfs/merkledag/test"
+	mdag "github.com/getlantern/go-ipfs/merkledag"
+	mdagtest "github.com/getlantern/go-ipfs/merkledag/test"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 func TestDFSPreNoSkip(t *testing.T) {

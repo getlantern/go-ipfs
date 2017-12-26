@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
-	core "github.com/ipfs/go-ipfs/core"
-	corecommands "github.com/ipfs/go-ipfs/core/commands"
-	config "github.com/ipfs/go-ipfs/repo/config"
+	core "github.com/getlantern/go-ipfs/core"
+	corecommands "github.com/getlantern/go-ipfs/core/commands"
+	config "github.com/getlantern/go-ipfs/repo/config"
 
-	cmds "gx/ipfs/QmP9vZfc5WSjfGTXmwX2EcicMFzmZ6fXn7HTdKYat6ccmH/go-ipfs-cmds"
-	cmdsHttp "gx/ipfs/QmP9vZfc5WSjfGTXmwX2EcicMFzmZ6fXn7HTdKYat6ccmH/go-ipfs-cmds/http"
+	cmds "github.com/ipfs/go-ipfs-cmds"
+	cmdsHttp "github.com/ipfs/go-ipfs-cmds/http"
 )
 
 const originEnvKey = "API_ORIGIN"

@@ -1,10 +1,10 @@
 package datastore2
 
 import (
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	dsq "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/query"
+	ds "github.com/ipfs/go-datastore"
+	dsq "github.com/ipfs/go-datastore/query"
 
-	delay "github.com/ipfs/go-ipfs/thirdparty/delay"
+	delay "github.com/getlantern/go-ipfs/thirdparty/delay"
 )
 
 func WithDelay(ds ds.Datastore, delay delay.D) ds.Datastore {

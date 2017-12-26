@@ -11,22 +11,22 @@ import (
 	"strings"
 	"sync"
 
-	filestore "github.com/ipfs/go-ipfs/filestore"
-	keystore "github.com/ipfs/go-ipfs/keystore"
-	repo "github.com/ipfs/go-ipfs/repo"
-	"github.com/ipfs/go-ipfs/repo/common"
-	config "github.com/ipfs/go-ipfs/repo/config"
-	lockfile "github.com/ipfs/go-ipfs/repo/fsrepo/lock"
-	mfsr "github.com/ipfs/go-ipfs/repo/fsrepo/migrations"
-	serialize "github.com/ipfs/go-ipfs/repo/fsrepo/serialize"
-	dir "github.com/ipfs/go-ipfs/thirdparty/dir"
+	filestore "github.com/getlantern/go-ipfs/filestore"
+	keystore "github.com/getlantern/go-ipfs/keystore"
+	repo "github.com/getlantern/go-ipfs/repo"
+	"github.com/getlantern/go-ipfs/repo/common"
+	config "github.com/getlantern/go-ipfs/repo/config"
+	lockfile "github.com/getlantern/go-ipfs/repo/fsrepo/lock"
+	mfsr "github.com/getlantern/go-ipfs/repo/fsrepo/migrations"
+	serialize "github.com/getlantern/go-ipfs/repo/fsrepo/serialize"
+	dir "github.com/getlantern/go-ipfs/thirdparty/dir"
 
-	"github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/mitchellh/go-homedir"
+	"github.com/getlantern/go-ipfs/Godeps/_workspace/src/github.com/mitchellh/go-homedir"
 
-	util "gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	logging "gx/ipfs/QmSpJByNKFX1sCsHBEp3R73FL4NF6FnQTEGyNAXHm2GS52/go-log"
-	measure "gx/ipfs/QmU7tt6mHJ5Wocjy2omBxpDfN8g9pkRimzJae7EXdrs96k/go-ds-measure"
-	ma "gx/ipfs/QmW8s4zTsUoX1Q6CeYxVKPyqSKbF7H1YDUyTostBtZ8DaG/go-multiaddr"
+	measure "github.com/ipfs/go-ds-measure"
+	util "github.com/ipfs/go-ipfs-util"
+	logging "github.com/ipfs/go-log"
+	ma "github.com/multiformats/go-multiaddr"
 )
 
 var log = logging.Logger("fsrepo")

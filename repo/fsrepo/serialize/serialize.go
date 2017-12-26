@@ -8,9 +8,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ipfs/go-ipfs/repo/config"
-	"gx/ipfs/QmPsAfmDBnZN3kZGSuNwvCNDZiHneERSKmRcFyG3UkvcT3/go-ipfs-util"
-	"gx/ipfs/QmdYwCmx8pZRkzdcd8MhmLJqYVoVTC1aGsy5Q4reMGLNLg/atomicfile"
+	"github.com/facebookgo/atomicfile"
+	"github.com/ipfs/go-ipfs-util"
+	"github.com/getlantern/go-ipfs/repo/config"
 )
 
 // ReadConfigFile reads the config from `filename` into `cfg`.

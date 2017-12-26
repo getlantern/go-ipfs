@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"os"
 
-	bal "github.com/ipfs/go-ipfs/importer/balanced"
-	"github.com/ipfs/go-ipfs/importer/chunk"
-	h "github.com/ipfs/go-ipfs/importer/helpers"
-	trickle "github.com/ipfs/go-ipfs/importer/trickle"
-	dag "github.com/ipfs/go-ipfs/merkledag"
-	"gx/ipfs/QmQp2a2Hhb7F6eK2A5hN8f9aJy4mtkEikL9Zj4cgB7d1dD/go-ipfs-cmdkit/files"
+	"github.com/ipfs/go-ipfs-cmdkit/files"
+	bal "github.com/getlantern/go-ipfs/importer/balanced"
+	"github.com/getlantern/go-ipfs/importer/chunk"
+	h "github.com/getlantern/go-ipfs/importer/helpers"
+	trickle "github.com/getlantern/go-ipfs/importer/trickle"
+	dag "github.com/getlantern/go-ipfs/merkledag"
 
-	node "gx/ipfs/QmNwUEK7QbwSqyKBu3mMtToo8SUc6wQJ7gdZq4gGGJqfnf/go-ipld-format"
+	node "github.com/ipfs/go-ipld-format"
 )
 
 // Builds a DAG from the given file, writing created blocks to disk as they are

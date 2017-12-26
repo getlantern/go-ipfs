@@ -3,7 +3,7 @@ package wantlist
 import (
 	"testing"
 
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
 )
 
 var testcids []*cid.Cid

@@ -5,14 +5,14 @@ import (
 	"encoding/binary"
 	"testing"
 
-	blockstore "github.com/ipfs/go-ipfs/blocks/blockstore"
-	bserv "github.com/ipfs/go-ipfs/blockservice"
-	offline "github.com/ipfs/go-ipfs/exchange/offline"
-	dag "github.com/ipfs/go-ipfs/merkledag"
+	blockstore "github.com/getlantern/go-ipfs/blocks/blockstore"
+	bserv "github.com/getlantern/go-ipfs/blockservice"
+	offline "github.com/getlantern/go-ipfs/exchange/offline"
+	dag "github.com/getlantern/go-ipfs/merkledag"
 
-	ds "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore"
-	dsq "gx/ipfs/QmdHG8MAuARdGHxx4rPQASLcvhz24fzjSQq7AJRAQEorq5/go-datastore/query"
-	cid "gx/ipfs/QmeSrf6pzut73u6zLQkRFQ3ygt3k6XFT2kjdYP8Tnkwwyg/go-cid"
+	cid "github.com/ipfs/go-cid"
+	ds "github.com/ipfs/go-datastore"
+	dsq "github.com/ipfs/go-datastore/query"
 )
 
 func ignoreCids(_ *cid.Cid) {}
