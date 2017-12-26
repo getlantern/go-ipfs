@@ -1,4 +1,4 @@
-## It's a fork of https://github.com/ipfs/go-ipfs which replaces the IPFS import paths with normal ones via [`gx-go uw`](https://github.com/ipfs/go-ipfs/issues/4491#issuecomment-351835336)
+## It's a fork of https://github.com/ipfs/go-ipfs which replaces the IPFS import paths with normal ones via [`gx-go uw`](https://github.com/ipfs/go-ipfs/issues/4491#issuecomment-351835336). Run `rewrite_import_paths.sh` to update to the latest master from upstream.
 
 # go-ipfs
 
